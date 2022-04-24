@@ -77,3 +77,21 @@ function calcularAreaTriangulo(){
     const perimetro = areaTriangulo(base, altura);
     alert(perimetro)
 }
+
+function calcularCircunferenciaCirculo(){
+    const input = document.getElementById("inputRadio");
+
+    const radio = Number(input.value);
+
+    const circunferencia = diametroCirculo(radio);
+    alert(circunferencia);
+}
+
+function calcularAreaCirculo(){
+    const input = document.getElementById("inputRadio");
+
+    const radio = Number(input.value);
+
+    const area = areaCirculo(radio);
+    alert(area);
+}
