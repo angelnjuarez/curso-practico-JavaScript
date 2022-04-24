@@ -9,3 +9,9 @@
 -Tercer paso: generalizar, es decir, crear funciones
 -Cuaro paso: integrar JS con HTML
 
+##Taller #2: Porcentajes y descuentos
+
+-Primer paso: definir formulas
+-Segundo paso: implementar formulas en JavaScript
+-Tercer paso: crear funciones
+-Cuaro paso: integrar JS con HTML
