@@ -7,9 +7,32 @@
     <title>Porcentajes y descuentos</title>
 </head>
 <body>
-    <h1>
-        Porcentajes y descuentos
-    </h1>
+    <header>
+        <h1>
+            Porcentajes y descuentos
+        </h1>
+
+        <p>
+            Esta aplicación sirve para calcular los precios con decuentos.
+        </p>
+
+        <section>
+            <h2>Calcula tu precio con los descuentos incluidos</h2>
+            <form>
+                <label for="inputPrecio">Ingresa el precio del producto: </label>
+                <input id="inputPrecio" type="number"/>
+                <br>
+                <label for="inputDescuento">Ingresa el % de descuento:</label>
+                <input id="inputDescuento" type="number"/>
+                <br>
+                <button type="button" onclick="obtenerPrecioConDescuento()">
+                    Calcular precio con descuento
+                </button>
+
+                <p id="ResultadoPrecio"></p>
+            </form>
+        </section>
+    </header>
 
     <script src="./descuentos.js"></script>
 </body>
