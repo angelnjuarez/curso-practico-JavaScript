@@ -5,7 +5,7 @@ const lista1 = [
     500,
 ];
 
-
+//Calculo promedio
 function calcularMediaAritmetica(lista){
 /*     let sumaLista = 0;
     for (let i = 0; i < lista.length; i++){
