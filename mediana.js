@@ -18,12 +18,19 @@ function calcularMediaAritmetica(lista){
 }
 
 function mitadLista(lista){
-    const indiceMitad = parseInt(lista.length / 2);
-    return indiceMitad;
+    const indiceMedio = parseInt(lista.length / 2);
+    return indiceMedio;
+}
+
+function ordenarLista(lista){
+    const listaOrdenada = lista.sort((a, b) => a - b);
+    //En la funcion lambda, si a-b<0 es negativo, a-b>0 es positivo, a-b=0 son iguales
+    return lista;
 }
 
 function calcularMediana(lista){
-    const indiceMedio = mitadLista(lista);
+    const listaPorOden = ordenarLista(lista);
+    const indiceMedio = mitadLista(listaPorOden);
     if (esPar(lista.length)){
         const elemento1 = lista[indiceMedio-1];
         const elemento2 = lista[indiceMedio];
