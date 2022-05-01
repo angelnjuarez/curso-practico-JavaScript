@@ -14,8 +14,8 @@
 
     function contarElementos(lista){
         const listaCount = {};
-        //Toma un array de objetos y crea un nuevo array que
-        //contiene los nuevos objetos formateados.
+        //Toma un array de objetos y crea un nuevo array
+        //que contiene los nuevos objetos formateados.
         lista.map(
             function(elemento){
                 if (listaCount[elemento]){
@@ -49,3 +49,44 @@
         )
         .pop();
     };
+
+    const notas = [
+        {
+            materia: "Educacion Fisica",
+            nota: 10,
+            creditos: 2,
+        },
+        {
+            materia: "Programacion",
+            nota: 8,
+            creditos: 5,
+        },
+        {
+            materia: "Economia",
+            nota: 7,
+            creditos: 5,
+        }
+    ]
+
+    function sumaNotaPorCreditos(ArrayDeNotas){
+        let ArrayNotasConCreditos = [...ArrayDeNotas].map(
+            a => a.nota * a.creditos
+        )
+        return ArrayNotasConCreditos.reduce(
+            (sum=0, a) => sum + a //devuelve el acumulado de las notas*credito
+        )
+    };
+
+    function sumaCreditos(ArrayDeNotas){
+        let listaCreditos = [...ArrayDeNotas].map(
+            a => a.creditos
+        )
+        return listaCreditos.reduce(
+            (sum=0, a) => sum + a
+        )
+    }
+
+    function promedioPonderadoNotas(ArrayDeNotas){
+        return sumaNotaPorCreditos(ArrayDeNotas) / sumaCreditos(ArrayDeNotas);
+    }
+
