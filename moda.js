@@ -89,4 +89,3 @@
     function promedioPonderadoNotas(ArrayDeNotas){
         return sumaNotaPorCreditos(ArrayDeNotas) / sumaCreditos(ArrayDeNotas);
     }
-
